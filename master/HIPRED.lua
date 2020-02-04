@@ -79,7 +79,7 @@ local logoandroid = {
 
 for i = 1, #logoandroid do
 gpu.setForeground(0x00B600)
-term.setCursor (xCen - 22, yCen - 10 + i)
+term.setCursor (xCen - 15, yCen - 5 + i)
 print (logoandroid[i])
 end
 
@@ -96,7 +96,7 @@ while i < xCen+25 do
   if j > 18 then j = 18 end
   gpu.setForeground(foreg[j])
   gpu.setBackground(0x000000)
-  term.setCursor(xCen-10, yCen+11)
+  term.setCursor(xCen-17, yCen+11)
   print ("Распространять только через дискету!")
   i=i+1
   os.sleep(0.0005)
@@ -149,7 +149,7 @@ term.setCursor(2,3)
 print ("▄███████████▄ ")
 gpu.setBackground(0x00B600)
 gpu.setForeground(0x002440)
-term.setCursor(5,3)
+term.setCursor(6,3)
 print ("HIPRED")
 --  ----------------------------------  battery ------------------
 -- batt = 100
