@@ -429,4 +429,4 @@ end
 gpu.setBackground(0x000000)
 gpu.setForeground(0xFFFFFF)
 term.clear()
-print ("(Чтобы запустить ОС в командной строке набери HIPOSAV.lua)")
+print ("(Чтобы запустить ОС в командной строке набери HIPRED.lua)")
