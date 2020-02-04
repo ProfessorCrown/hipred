@@ -33,8 +33,8 @@ local GUI = require("GUI")
 
 -- переменные, таблицы с параметрами иконок и их ссылками на программы
 
---local oslogoup = image.load("HIPOSAV/IconsPic/oslogoup.pic")
---local imageLogo = image.load("HIPOSAV/IconsPic/Logo.pic")
+--local oslogoup = image.load("HIPRED/IconsPic/oslogoup.pic")
+--local imageLogo = image.load("HIPRED/IconsPic/Logo.pic")
 local xScrM, yScrM = gpu.getResolution()
 local xScr, yScr = gpu.getResolution()
 local dop = 2
@@ -48,12 +48,12 @@ yScr = 30
 end
 local xCen, yCen = math.ceil(xScr/2), math.ceil(yScr/2)
 
--- строка для тмп ___  iconEXIT.pic  Выключение ПК  tq.pic /HIPOSAV/tquest.lua
+-- строка для тмп ___  iconEXIT.pic  Выключение ПК  tq.pic /HIPRED/tquest.lua
 --desk1 = {}
 --desk2 = {}
 --desk3 = {}
 local desk1 = {"iconNC.pic","iconNANO.pic","nano2.pic","tq.pic","battleship.pic","saper.pic","info.pic","chat.pic","ops.pic","pstb.pic","iconEXIT.pic","magnit.pic"}
-local desk2 = {"/HIPOSAV/nc.lua","/HIPOSAV/nanobots.lua","/HIPOSAV/nanoplus.lua","/HIPOSAV/tquest.lua","/HIPOSAV/Battleship.lua","/HIPOSAV/saper.lua","/HIPOSAV/info.lua","/HIPOSAV/chat.lua","/HIPOSAV/ops.lua","/HIPOSAV/pstb.lua","/HIPOSAV/exit.lua","/HIPOSAV/magnit.lua"}
+local desk2 = {"/HIPRED/nc.lua","/HIPRED/nanobots.lua","/HIPRED/nanoplus.lua","/HIPRED/tquest.lua","/HIPRED/Battleship.lua","/HIPRED/saper.lua","/HIPRED/info.lua","/HIPRED/chat.lua","/HIPRED/ops.lua","/HIPRED/pstb.lua","/HIPRED/exit.lua","/HIPRED/magnit.lua"}
 local desk3 = {"  Менеджер","Упр.нанитами"," Наноботы-2","   TQueST","Морской бой","   Сапёр","   Инфо ПК","     Чат","Диспетчер HDD","  Pastebin","Выключение ПК","   Магнит"}
 local desk4 = {}
 local desk5 = {}
@@ -242,7 +242,7 @@ ytmp = mn * 6
 desk4[i] = ytmp+0
 desk5[i] = xtmp+0
 --print(desk4[i],desk5[i])
-imgtmp = "/HIPOSAV/IconsPic/"..desk1[i]
+imgtmp = "/HIPRED/IconsPic/"..desk1[i]
 local desktmp = image.load(imgtmp)
 image.draw(xtmp,ytmp,desktmp)
 term.setCursor(xtmp-2,ytmp+4)
@@ -280,10 +280,10 @@ local event, _, xmou2, ymou2 = event.pull(15)
 	 end
 	elseif ymou2 == 6 and xmou2 < 40 then
 	 shell.execute("cd //")
-     shell.execute("/HIPOSAV/ops.lua")
+     shell.execute("/HIPRED/ops.lua")
 	elseif ymou2 == 8 and xmou2 < 40 then
 	 shell.execute("cd //")
-     shell.execute("/HIPOSAV/exit.lua")
+     shell.execute("/HIPRED/exit.lua")
 	elseif ymou2 == 10 and xmou2 < 40 then
      gpu.setBackground(0x000000)
      gpu.setForeground(0xFFFFFF)
@@ -351,7 +351,7 @@ buffer.draw(true)
 mainContainer2:startEventHandling()
     elseif ymou2 == 14 and xmou2 < 40 then
 	 shell.execute("cd //")
-     shell.execute("/HIPOSAV/info.lua")
+     shell.execute("/HIPRED/info.lua")
 	end
    end
 end
@@ -368,7 +368,7 @@ end
 --       --if ymou >= ytou and ymou <= ytou+4 and xmou >= xtou and xmou <= xtou+8 then
 --       if ymou == 1 and xmou == 1 then
 -- exityn = "exit"
---       --shell.execute("/HIPOS/"..desk2[i])
+--       --shell.execute("/HIPRED/"..desk2[i])
 --       end
 --   i=i+1
 --   end
