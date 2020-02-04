@@ -4,7 +4,7 @@ local modemConnection = require("modemConnection")
 local ecs = require("ECSAPI")
 local fs = require("filesystem")
 local serialization = require("serialization")
-local buffer = require("HIPOSAV/chat/doubleBuffering")
+local buffer = require("HIPRED/chat/doubleBuffering")
 local context = require("context")
 local image = require("image")
 local unicode = require("unicode")
@@ -56,11 +56,11 @@ modem.open(port)
 
 -------------------------------------------------------------------------------------------------------------------------------
 
-local pathToApplication = "/HIPOSAV/"
-local pathToSaveSendedFiles = "/HIPOSAV/chat/Downloads/"
+local pathToApplication = "/HIPRED/"
+local pathToSaveSendedFiles = "/HIPRED/chat/Downloads/"
 local contactsAvatarsPath = pathToApplication .. "chat/Avatars/"
 local personalAvatarPath = contactsAvatarsPath .. "MyAvatar.pic"
-local chatHistoryPath = "HIPOSAV/chat/History.cfg"
+local chatHistoryPath = "HIPRED/chat/History.cfg"
 local avatarWidthLimit = 6
 local avatarHeightLimit = 3
 
