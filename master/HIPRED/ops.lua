@@ -24,10 +24,10 @@ local topButtons = {"О системе", "Диски"}
 local spaceBetweenTopButtons, offsetTopButtons = 2, 2
 local currentMode = 1
 
-local osIcon = image.load("/HIPOSAV/IconsPic/oslogoup.pic")
-local hddIcon = image.load("/HIPOSAV/IconsPic/HDD.pic")
-local floppyIcon = image.load("/HIPOSAV/IconsPic/Floppy.pic")
-local updateIcon = image.load("/HIPOSAV/IconsPic/Update.pic")
+local osIcon = image.load("/HIPRED/IconsPic/oslogoup.pic")
+local hddIcon = image.load("/HIPRED/IconsPic/HDD.pic")
+local floppyIcon = image.load("/HIPRED/IconsPic/Floppy.pic")
+local updateIcon = image.load("/HIPRED/IconsPic/Update.pic")
 
 local x, y = "auto", "auto"
 local width, height = 68, 22
